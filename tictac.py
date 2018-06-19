@@ -78,7 +78,7 @@ class JogoDaVelha:
             melhor = 10
         if self.completo():
             if self.pegaVencedor() == "x":
-                return -10 + profundidade, None
+                return profundidade - 10, None
             elif self.pegaVencedor() == "empate":
                 return 0, None
             elif self.pegaVencedor() == "o":
